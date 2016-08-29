@@ -31,6 +31,6 @@ class CamelToUnderscoreTestCase(TestCase):
 class CompatibilityTest(TestCase):
     def test_compatibility(self):
         input = {
-            "title_245a_display": 1
+            "title245a_display": 1
         }
         self.assertEqual(underscoreize(camelize(input)), input)
